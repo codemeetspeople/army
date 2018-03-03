@@ -6,6 +6,7 @@ Unit::Unit(const char* title, int hp, int dmg) {
 
 Unit::~Unit() {
     delete(this->state);
+    delete(this->ability);
 }
 
 const char* Unit::getTitle() const {
