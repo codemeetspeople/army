@@ -31,3 +31,11 @@ void Unit::addHp(int hp) {
 void Unit::takeDmg(int dmg) {
     this->state->takeDmg(dmg);
 }
+
+void Unit::attack(Unit* enemy) {
+    this->ability->attack(enemy);
+}
+
+void Unit::counterAttack(Unit* enemy) {
+    this->ability->counterAttack(enemy);
+}
